@@ -1,7 +1,7 @@
 <h2>Simple Linear regression with Python</h2>
 <img src="captures/IMG-0777.jpg">
 <img src="captures/plot.png">
-
+<pre>
 regression=9.896964110671043*x+1.6314708810783125
 Hours  Scores  predicted
 0     2.5      21  26.373881
@@ -29,3 +29,4 @@ Hours  Scores  predicted
 22    3.8      35  39.239935
 23    6.9      76  69.920523
 24    7.8      86  78.827791
+</pre>
