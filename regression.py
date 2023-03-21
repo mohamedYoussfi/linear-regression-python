@@ -1,5 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
+from IPython.display import display
+from tabulate import tabulate
 
 data=pd.read_csv("student_scores.csv")
 data
@@ -47,4 +49,5 @@ plt.subplot(2,1,2)
 plt.plot(list(range(0,len(errors))), errors)
 plt.show()
 data['predicted']=f(m,b,data['Hours'])
-print(data)
+#display(data)
+print(tabulate(data, headers = 'keys', tablefmt = 'psql'))
