@@ -42,10 +42,15 @@ for i in range(epochs):
     errors.append(loss);
 
 print(f"regression={m}*x+{b}")
+plt.figure(figsize=(15,15))
 plt.subplot(2,1,1)
+plt.xlabel("Hours")
+plt.ylabel("Score")
 plt.scatter(data.Hours, data.Scores, color='black')
 plt.plot(list(range(0,10)),[m*x+b for x in range(0,10)], color='red')
 plt.subplot(2,1,2)
+plt.xlabel("Epoch")
+plt.ylabel("Mean Squared Error")
 plt.plot(list(range(0,len(errors))), errors)
 plt.show()
 data['predicted']=f(m,b,data['Hours'])
